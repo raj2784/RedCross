@@ -69,6 +69,7 @@ export const AddVolunteer = () => {
                             className="form-control from-control-xs"
                             placeholder="Age"
                             name="age"
+                            maxlength="2"
                             value={age}
                             onChange={e => onInputChange(e)}
                         />
