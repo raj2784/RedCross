@@ -20,7 +20,7 @@ export const AddVolunteer = () => {
     const onSubmit = async e => {
         e.preventDefault();
         if (volunteer.fullName === "") {
-            alert("Name fields are required!!");
+            alert("Name fields is required!!");
             return;
         }
         await axios.post("https://localhost:44385/api/volunteer", volunteer);
