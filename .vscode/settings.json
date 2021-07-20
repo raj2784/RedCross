@@ -1,9 +1,3 @@
 {
-    "git.allowNoVerifyCommit": true,
-    "git.enableSmartCommit": true,
-    "git.enableCommitSigning": true,
-    "git.allowForcePush": true,
-    "git.autofetch": "all",
-    "search.useGlobalIgnoreFiles": true,
-    "git.alwaysSignOff": true
+    "git.ignoreLimitWarning": true
 }
