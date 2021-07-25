@@ -25,21 +25,21 @@ const Home = () => {
                 <table className="table border shadow">
                     <thead className="table-dark">
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Full-Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Mobile</th>
-                            <th scope="col">Age</th>
-                            <th scope="col">Blood-Group</th>
+                            <th className="col">#</th>
+                            <th className="col">Full-Name</th>
+                            <th className="col">Email</th>
+                            <th className="col">Mobile</th>
+                            <th className="col">Age</th>
+                            <th className="col">Blood-Group</th>
                             <th className="col">Address</th>
-                            <th scope="col">Edit/Delete</th>
+                            <th className="col">Edit/Delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
                             volunteers.map((volunteer, index) => (
                                 <tr>
-                                    <td scope="row">{index + 1}</td>
+                                    <td className="row">{index + 1}</td>
                                     <td>{volunteer.fullName}</td>
                                     <td>{volunteer.email}</td>
                                     <td>{volunteer.mobile}</td>
