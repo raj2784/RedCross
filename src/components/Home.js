@@ -20,7 +20,10 @@ const Home = () => {
     return (
         <div className="container">
             <div className="py-4">
-                <Link className="btn btn-primary mb-2" exact to="/volunteer/add">AddVolunteer</Link>
+
+                <Link className="btn btn-primary mb-2" exact to="/volunteer/add" style={{ marginLeft: 1170 }}>AddVolunteer</Link>
+
+
                 <table className="table border shadow">
                     <thead className="table-dark">
                         <tr>
