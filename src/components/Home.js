@@ -20,7 +20,6 @@ const Home = () => {
     return (
         <div className="container">
             <div className="py-4">
-
                 <Link className="btn btn-primary mb-2" exact to="/volunteer/add">AddVolunteer</Link>
                 <table className="table border shadow">
                     <thead className="table-dark">
@@ -39,7 +38,7 @@ const Home = () => {
                         {
                             volunteers.map((volunteer, index) => (
                                 <tr>
-                                    <td className="row">{index + 1}</td>
+                                    <td>{index + 1}</td>
                                     <td>{volunteer.fullName}</td>
                                     <td>{volunteer.email}</td>
                                     <td>{volunteer.mobile}</td>
@@ -47,9 +46,9 @@ const Home = () => {
                                     <td>{volunteer.bloodGroup}</td>
                                     <td>{volunteer.address}</td>
                                     <td>
-                                        <Link className="btn btn-primary btn-sm m-2">View</Link>
-                                        <Link className="btn btn-primary btn-sm m-2" exact to={`/volunteer/edit/${volunteer.id}`}>Edit</Link>
-                                        <Link className="btn btn-danger btn-sm m-2" onClick={() => deleteVolunteer(volunteer.id)}>Delete</Link>
+                                        <Link className="btn btn-primary btn-sm m-1">View</Link>
+                                        <Link className="btn btn-primary btn-sm m-1" exact to={`/volunteer/edit/${volunteer.id}`}>Edit</Link>
+                                        <Link className="btn btn-danger btn-sm m-1" onClick={() => deleteVolunteer(volunteer.id)}>Delete</Link>
                                     </td>
                                 </tr>
                             ))
