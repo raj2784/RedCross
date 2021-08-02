@@ -41,7 +41,6 @@ export const AddVolunteer = () => {
                             placeholder="Full Name"
                             name="fullName"
                             value={fullName}
-
                             onChange={e => onInputChange(e)}
                         />
                     </div>
@@ -52,7 +51,6 @@ export const AddVolunteer = () => {
                             placeholder="Email"
                             name="email"
                             value={email}
-
                             onChange={e => onInputChange(e)}
                         />
                     </div>
@@ -64,7 +62,6 @@ export const AddVolunteer = () => {
                             name="mobile"
                             maxLength="10"
                             value={mobile}
-
                             onChange={e => onInputChange(e)}
                         />
                     </div>
@@ -74,9 +71,8 @@ export const AddVolunteer = () => {
                             className="form-control from-control-xs"
                             placeholder="Age"
                             name="age"
-                            maxlength="2"
+                            maxLength="3"
                             value={age}
-
                             onChange={e => onInputChange(e)}
                         />
                     </div>
@@ -86,8 +82,8 @@ export const AddVolunteer = () => {
                             className="form-control from-control-xs"
                             placeholder="Blood-Group"
                             name="bloodGroup"
+                            maxLength="3"
                             value={bloodGroup}
-
                             onChange={e => onInputChange(e)}
                         />
                     </div>

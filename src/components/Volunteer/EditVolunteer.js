@@ -80,6 +80,7 @@ export const EditVolunteer = () => {
                             className="form-control from-control-xs"
                             placeholder="Age"
                             name="age"
+                            maxLength="3"
                             value={age}
                             onChange={e => onInputChange(e)}
                         />
@@ -90,6 +91,7 @@ export const EditVolunteer = () => {
                             className="form-control from-control-xs"
                             placeholder="Blood-Group"
                             name="bloodGroup"
+                            maxLength="3"
                             value={bloodGroup}
                             onChange={e => onInputChange(e)}
                         />
