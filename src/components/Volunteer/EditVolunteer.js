@@ -31,7 +31,7 @@ export const EditVolunteer = () => {
     }
     const getVolunteerById = async () => {
         const result = await axios.get(`https://localhost:44385/api/volunteer/${id}`);
-        console.log(result.data);
+        //console.log(result.data);
         setVolunteer(result.data);
     }
     useEffect(() => {
@@ -80,7 +80,7 @@ export const EditVolunteer = () => {
                             className="form-control from-control-xs"
                             placeholder="Age"
                             name="age"
-                            maxLength="3"
+                            maxLength="2"
                             value={age}
                             onChange={e => onInputChange(e)}
                         />
