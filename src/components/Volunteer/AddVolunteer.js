@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 
 export const AddVolunteer = () => {
+
     let history = useHistory();
     const [volunteer, setVolunteer] = useState({
         fullName: "",
@@ -18,6 +19,7 @@ export const AddVolunteer = () => {
     };
 
     const onSubmit = async e => {
+        console.log(e);
         e.preventDefault();
         if (volunteer.fullName === "") {
             alert("Name fields is required!!");
@@ -32,38 +34,41 @@ export const AddVolunteer = () => {
             <div className="w-75 mx-auto shadow p-5">
                 <h3 >Add Volunteer</h3>
                 <form onSubmit={e => onSubmit(e)} >
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
                             placeholder="Full Name"
                             name="fullName"
                             value={fullName}
+
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
                             placeholder="Email"
                             name="email"
                             value={email}
+
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
                             placeholder="Mobile"
                             name="mobile"
-                            maxlength="10"
+                            maxLength="10"
                             value={mobile}
+
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
@@ -71,30 +76,33 @@ export const AddVolunteer = () => {
                             name="age"
                             maxlength="2"
                             value={age}
+
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
                             placeholder="Blood-Group"
                             name="bloodGroup"
                             value={bloodGroup}
+
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
                             placeholder="Address"
                             name="address"
                             value={address}
+
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <button className="btn btn-primary btn-block mt-2">Add</button>
+                    <button className="btn btn-primary btn-block m-2">Add</button>
                 </form>
             </div>
         </div >

@@ -2,6 +2,7 @@ import { useHistory, useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
+
 export const EditVolunteer = () => {
     let history = useHistory();
     const { id } = useParams();
@@ -42,7 +43,7 @@ export const EditVolunteer = () => {
             <div className="w-75 mx-auto shadow p-5">
                 <h3>Edit Volunteer</h3>
                 <form onSubmit={e => onSubmit(e)} >
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
@@ -52,7 +53,7 @@ export const EditVolunteer = () => {
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
@@ -62,17 +63,18 @@ export const EditVolunteer = () => {
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
                             placeholder="Mobile"
                             name="mobile"
+                            maxLength="10"
                             value={mobile}
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
@@ -82,7 +84,7 @@ export const EditVolunteer = () => {
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
@@ -92,7 +94,7 @@ export const EditVolunteer = () => {
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group m-2">
                         <input
                             type="text"
                             className="form-control from-control-xs"
@@ -102,7 +104,7 @@ export const EditVolunteer = () => {
                             onChange={e => onInputChange(e)}
                         />
                     </div>
-                    <button className="btn btn-primary btn-block mt-2">Update</button>
+                    <button className="btn btn-primary btn-block m-2">Update</button>
                 </form>
             </div>
         </div >
