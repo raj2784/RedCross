@@ -7,6 +7,7 @@ import Navbar from "./components/Layout/Navbar";
 import { AddVolunteer } from "./components/Volunteer/AddVolunteer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { EditVolunteer } from "./components/Volunteer/EditVolunteer";
+import Footer from "./components/Layout/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/volunteer/add" component={AddVolunteer} />
           <Route exact path="/volunteer/edit/:id" component={EditVolunteer} />
         </Switch>
+        {/* <Footer /> */}
       </div>
     </Router>
   );

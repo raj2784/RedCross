@@ -89,15 +89,23 @@ export const EditVolunteer = () => {
             />
           </div>
           <div className="form-group m-2">
-            <input
-              type="text"
-              className="form-control from-control-xs"
-              placeholder="Blood-Group"
-              name="bloodGroup"
-              maxLength="3"
+            <select
+              className="form-select from-control-xs"
               value={bloodGroup}
               onChange={(e) => onInputChange(e)}
-            />
+              name="bloodGroup"
+            >
+              <option value=" ">Select Your Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="B+">B+</option>
+              <option value="B++">B++</option>
+              <option value="A-">A-</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
           </div>
           <div className="form-group m-2">
             <input
